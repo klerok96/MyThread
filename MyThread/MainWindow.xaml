@@ -1,0 +1,33 @@
+﻿<Window x:Name="MyWindow" x:Class="MyThread.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyThread"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="600">
+    <Grid>
+        <ProgressBar x:Name="ProgressBar1" HorizontalAlignment="Left" Height="25" Margin="63,45,0,0" VerticalAlignment="Top" Width="386"/>
+        <ProgressBar x:Name="ProgressBar2" HorizontalAlignment="Left" Height="25" Margin="63,96,0,0" VerticalAlignment="Top" Width="386"/>
+        <ProgressBar x:Name="ProgressBar3" HorizontalAlignment="Left" Height="25" Margin="63,146,0,0" VerticalAlignment="Top" Width="386"/>
+        <ProgressBar x:Name="ProgressBar4" HorizontalAlignment="Left" Height="25" Margin="63,195,0,0" VerticalAlignment="Top" Width="386"/>
+        <Label Content="Задержка" HorizontalAlignment="Left" Margin="454,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="DelayLabel1" Content="0" HorizontalAlignment="Left" Margin="454,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <Label x:Name="DelayLabel2" Content="0" HorizontalAlignment="Left" Margin="454,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <Label x:Name="DelayLabel3" Content="0" HorizontalAlignment="Left" Margin="454,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <Label x:Name="DelayLabel14" Content="0" HorizontalAlignment="Left" Margin="454,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <Button x:Name="CreateNewTreadButton" Content="Создать новый поток" HorizontalAlignment="Left" Margin="320,279,0,0" VerticalAlignment="Top" Width="150" Height="24" Click="CreateNewTreadButton_Click"/>
+        <Label Content="№" HorizontalAlignment="Left" Margin="37,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="1" HorizontalAlignment="Left" Margin="37,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <Label Content="2" HorizontalAlignment="Left" Margin="37,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <Label Content="3" HorizontalAlignment="Left" Margin="37,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <Label Content="4" HorizontalAlignment="Left" Margin="37,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.603,1.742"/>
+        <ComboBox x:Name="NumberThreadCB" HorizontalAlignment="Left" Margin="27,251,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label Content="Выбрать поток для действия" HorizontalAlignment="Left" Margin="27,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.974,0.414"/>
+        <Button x:Name="CompleteThreadButtom" Content="Завершить" HorizontalAlignment="Left" Margin="203,279,0,0" VerticalAlignment="Top" Width="83" Height="29" Click="CompleteThreadButtom_Click"/>
+        <Button x:Name="СontinueThreadButton" Content="Продолжить" HorizontalAlignment="Left" Margin="27,279,0,0" VerticalAlignment="Top" Width="83" Height="29" Click="СontinueThreadButton_Click"/>
+        <Button x:Name="StopThreadButton" Content="Остановить" HorizontalAlignment="Left" Margin="115,279,0,0" VerticalAlignment="Top" Width="83" Height="29" Click="StopThreadButton_Click"/>
+        <Label x:Name="InQueueLabel" Content="В очереди: 0" HorizontalAlignment="Left" Margin="320,248,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
