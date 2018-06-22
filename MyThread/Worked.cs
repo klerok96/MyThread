@@ -20,8 +20,8 @@ namespace MyThread
 
             for (int i = 0; i < 100; i++)
             {
-                token.ThrowIfCancellationRequested();
                 mre.WaitOne();
+                token.ThrowIfCancellationRequested();
 
                 Thread.Sleep(delay);
 

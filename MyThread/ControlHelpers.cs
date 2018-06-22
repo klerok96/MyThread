@@ -35,7 +35,7 @@ namespace MyThread
             return null;
         }
 
-        public static int GetIdProgressBar(this ProgressBar progressBar)
+        public static int GetNumberSelectedPB(this ProgressBar progressBar)
         {
             return Convert.ToInt32(progressBar.Name.Substring(progressBar.Name.Length - 1));
         }
